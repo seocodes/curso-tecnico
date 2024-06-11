@@ -54,4 +54,4 @@ while True :
         quantidade = int(input("Digite a quantidade de produtos: "))
         padaria[len(padaria)+1] = [produto, preco, quantidade]
     if escolha == 6:
-        exit()
+        exit()  
