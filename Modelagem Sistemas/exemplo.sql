@@ -25,3 +25,19 @@ create table atleta(
         codatleta int(5) not null,
         primary key(codigo),
         foreign key(codatleta) references atleta(codigo)); -- lembrar da lógica disso depois tb
+    -----------
+
+    -- exemplo inserir campo
+    alter table modalidade
+    add preparador varchar(50) not null;
+    -- exemplo remover campo
+    alter table modalidade
+    drop preparador;
+    -- exemplo alterar campo
+    alter table modalidade
+    alter treinador varchar(100) not null; -- muda o tamanho da varchar
+    alter treinador set preparador varchar(100) not null; -- trocar o nome de treinador pra preparador (alterei o nome do campo)
+    -- excluir tabela
+    drop table modalidade;
+    -- excluir database
+    drop campeonato;
